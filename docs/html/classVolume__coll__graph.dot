@@ -1,0 +1,7 @@
+digraph "Volume&lt; DATA &gt;"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{Volume\< DATA \>\n|# depth\l# width\l# height\l# channels\l# image_indices\l# image_slices\l|+ Volume()\l+ Volume()\l+ Volume()\l+ ~Volume()\l+ getDepth()\l+ getWidth()\l+ getHeight()\l+ getChannels()\l+ getIndices()\l+ setIndices()\l+ setVoxel()\l+ getVoxel()\l+ write()\l+ return_iota()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Class for representing volumetric data as a collection of 2D image slices."];
+}

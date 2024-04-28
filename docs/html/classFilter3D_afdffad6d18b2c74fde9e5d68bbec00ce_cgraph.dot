@@ -1,0 +1,24 @@
+digraph "Filter3D::apply"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Filter3D::apply",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Image::check_range\l_assign",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classImage.html#adf74eb9c294250145821b077819eda99",tooltip=" "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Volume::getChannels",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classVolume.html#ac3ebc8d87231c971316968548763a5a1",tooltip=" "];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Volume::getDepth",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classVolume.html#a36a85df2d555a6ccf73147f9bd33c593",tooltip=" "];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Volume::getHeight",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classVolume.html#a05f48ad6f78518fe463ab455c285ff81",tooltip=" "];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="Volume::getIndices",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classVolume.html#a44d2668af0ad349b1b2e7879f0ce9cc6",tooltip=" "];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="Volume::getWidth",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classVolume.html#a3625eeec2ab0dbc1c3c7e90405bb7de5",tooltip=" "];
+  Node1 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="Volume::setIndices",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classVolume.html#aac2f0d85d6e0b69b1759a47090176c83",tooltip=" "];
+  Node1 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="Volume::setVoxel",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classVolume.html#a32c16be8acbd3f8588720f666349a3b9",tooltip=" "];
+}

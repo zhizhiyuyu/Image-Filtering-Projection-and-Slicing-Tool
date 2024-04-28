@@ -1,0 +1,7 @@
+digraph "Image&lt; DATA &gt;"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{Image\< DATA \>\n|# image_allocation\l# width\l# height\l# channels\l# pixels\l|+ Image()\l+ Image()\l+ operator=()\l+ ~Image()\l+ getWidth()\l+ getHeight()\l+ getChannels()\l+ setPixel()\l+ getPixel()\l+ write()\l+ reflect_into_domain()\l+ wrap_into_domain()\l+ check_range_assign()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Class for representing and manipulating images."];
+}

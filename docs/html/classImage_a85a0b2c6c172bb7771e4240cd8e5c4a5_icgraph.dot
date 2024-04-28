@@ -1,0 +1,42 @@
+digraph "Image::setPixel"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="Image::setPixel",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Sets the pixel value at the specified position."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Filter2D::apply",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classFilter2D.html#ad7117badae2b19ecf7db6bb4107d7f81",tooltip=" "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Grayscale2D::apply",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classGrayscale2D.html#a93d20386221396e2fcc54d1169877f49",tooltip=" "];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627",tooltip=" "];
+  Node3 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="test_filter_2D",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$checkOutput_8cpp.html#a7882ae47b8acacf1a5fccb1cc47ab4fd",tooltip=" "];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$checkOutput_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627",tooltip=" "];
+  Node3 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="test_performance_2D",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$checkOutput_8cpp.html#ad8e6aaf1c127ae3778d9c8ead18ee9b8",tooltip=" "];
+  Node2 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="ColourBalance2D::apply",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classColourBalance2D.html#a07f60eaddba6ea60b7c246102450473f",tooltip=" "];
+  Node8 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="Edge2D::apply",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classEdge2D.html#a9e1a030e596c845abf9bb7181e768bfa",tooltip=" "];
+  Node9 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="HistogramEqualisation2D\l::apply",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classHistogramEqualisation2D.html#a0c38d7be03938b884bdd8a5b5a5aa21b",tooltip=" "];
+  Node10 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="old_main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$minimal_8cpp.html#a4f248fe6bdc62df2f41c5abd34e81ed1",tooltip=" "];
+  Node1 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="Projection::take",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classProjection.html#a3dc78809815af72a15b9be6d1b36d5ec",tooltip="Computes a 2D projection of volumetric data."];
+  Node12 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="Slice::take",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classSlice.html#a999ae41d6741f41c1b28c017d0464510",tooltip="Extracts a 2D slice from 3D volumetric data along a specified axis."];
+  Node12 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="test_performance_3D",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$checkOutput_8cpp.html#a780d3a6cf535a02b73cfd092b24fd162",tooltip=" "];
+}

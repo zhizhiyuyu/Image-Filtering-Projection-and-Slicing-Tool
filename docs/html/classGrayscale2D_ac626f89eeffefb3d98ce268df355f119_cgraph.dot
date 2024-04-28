@@ -1,0 +1,10 @@
+digraph "Grayscale2D::applyPerElement"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Grayscale2D::applyPerElement",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Image::getPixel",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classImage.html#a20827f1edbe739ce0332fda00e0e3039",tooltip=" "];
+}

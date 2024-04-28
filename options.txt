@@ -1,0 +1,35 @@
+###############################################################################
+###               Options File for Image Processing Library                 ###
+###                     Course: Advanced Programming                        ###
+###                        Group: Binary Search                             ###
+###                                                                         ###
+###                       Comments begin with #                             ###
+###              Example usages are included in this file                   ###
+###                        Uncomment before use                             ###
+###                Operations are sequentially pipelined                    ###
+###           Last operation output will be written to disk                 ###
+###        More advanced usage is available via the C++ classes API         ###
+###               Examples are provided in src/minimal.cpp                  ###
+###     Please refer to documentation to move beyond default arguments      ###
+###############################################################################
+# Relative input file path
+ImageIn: ../Images/dimorphos.png
+# Filter: Grayscale
+# Input the coefficients for the RGB channels for colour balance
+# Filter: ColourBalance 1 1 1
+# Input the brightness value to be added
+# Filter: Brightness 50
+# Filter: HistEq
+# Input the kernel sizes for the blurs
+# Filter: MedianBlur2D 5
+# Filter: BoxBlur2D 7
+# Input the kernel size and standard deviation
+# Filter: GaussianBlur2D 9 50
+# Filter: Sobel
+# Filter: Prewitt
+# Filter: Scharr
+# Filter: RobertsCross
+# Relative output file path
+ImageOut: ../Output/output.png
+# VolumeIn: ../Scans/fracture/granite1_ 325 1624
+# VolumeIn: ../Scans/confuciusornis/confuYZ 1 265

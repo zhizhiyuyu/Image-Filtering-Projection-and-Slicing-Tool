@@ -1,0 +1,21 @@
+digraph "Edge2D::apply"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Edge2D::apply",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Filter2D::apply",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classFilter2D.html#ad7117badae2b19ecf7db6bb4107d7f81",tooltip=" "];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Image::check_range\l_assign",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classImage.html#adf74eb9c294250145821b077819eda99",tooltip=" "];
+  Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Image::getChannels",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classImage.html#ac5aa58198ae9fe5492b3512d0d6f2ab8",tooltip=" "];
+  Node2 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Image::getHeight",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classImage.html#a1d36dbbab253f54aa2a21e7dc02f6448",tooltip=" "];
+  Node2 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="Image::getWidth",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classImage.html#a864645b6ce25dce149f4924da9e3d510",tooltip="Destructor for the Image object."];
+  Node2 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="Image::setPixel",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classImage.html#a85a0b2c6c172bb7771e4240cd8e5c4a5",tooltip="Sets the pixel value at the specified position."];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

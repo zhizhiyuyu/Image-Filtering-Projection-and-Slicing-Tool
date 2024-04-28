@@ -1,0 +1,22 @@
+digraph "Image::reflect_into_domain"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="Image::reflect_into\l_domain",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Volume::getVoxel",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classVolume.html#a853cf00111c88335ba04df8e5b905316",tooltip=" "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Filter3D::applyPerElement",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classFilter3D.html#ac8bd6691a5d495a6ba881af0d8613a34",tooltip=" "];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Blur3D::applyPerElement",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBlur3D.html#a4de7430ef857389fcf22b5a199d0d9e1",tooltip=" "];
+  Node2 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="MedianBlur3D::applyPerElement",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classMedianBlur3D.html#aa03a3f414ef3bb69d6673275d2604f74",tooltip=" "];
+  Node2 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="Projection::take",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classProjection.html#a3dc78809815af72a15b9be6d1b36d5ec",tooltip="Computes a 2D projection of volumetric data."];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="Slice::take",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classSlice.html#a999ae41d6741f41c1b28c017d0464510",tooltip="Extracts a 2D slice from 3D volumetric data along a specified axis."];
+  Node6 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="test_performance_3D",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$checkOutput_8cpp.html#a780d3a6cf535a02b73cfd092b24fd162",tooltip=" "];
+}
